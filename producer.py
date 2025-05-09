@@ -5,14 +5,14 @@ SERVER_HOST = 'localhost'
 SERVER_PORT = 5000
 
 def mostrar_menu():
-    print("Selecciona una tarea:")
+    print("pollo, selecciona que tarea quieres realizar:")
     print("1. Sumar dos números")
     print("2. Convertir a mayúsculas")
     print("3. Invertir cadena")
 
 def obtener_tarea():
     mostrar_menu()
-    opcion = input("Ingresa el número de la tarea: ")
+    opcion = input("valecita, ingresa el número de la tarea: ")
 
     if opcion == '1':
         a = int(input("Primer número: "))
@@ -49,7 +49,7 @@ def main():
         client_socket.connect((SERVER_HOST, SERVER_PORT))
         client_socket.sendall(json.dumps(tarea).encode())
         client_socket.close()
-        print("Tarea enviada al servidor.")
+        print("pollo, ya te mandé la tarea al servidor.")
     except Exception as e:
         print("Error al conectar o enviar:", e)
 
