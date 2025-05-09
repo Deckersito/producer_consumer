@@ -23,7 +23,7 @@ def main():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((SERVER_HOST, SERVER_PORT))
 
-    print("Esperando tarea...")
+    print("esperando que envies la tarea papa bello...")
 
     while True:
         mensaje = client_socket.recv(1024)
@@ -37,7 +37,7 @@ def main():
 
             if tarea in tareas:
                 resultado = tareas[tarea](*parametros)
-                print(f"Resultado de '{tarea}': {resultado}")
+                print(f"pollo, este es el resultado de'{tarea}': {resultado}")
             else:
                 print("Tarea no válida.")
         except Exception as e:
