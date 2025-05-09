@@ -37,7 +37,7 @@ def main():
 
             if tarea in tareas:
                 resultado = tareas[tarea](*parametros)
-                print(f"pollo, este es el resultado de '{tarea}': {resultado}")
+                print(f"pollo, este es el resultado de' {tarea}': {resultado}")
             else:
                 print("Tarea no válida.")
         except Exception as e:
